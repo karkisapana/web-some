@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+         margin: 0;
+         padding: 0;
+      }
+      input{
+         outline: none;
+
+      }
+      
+      input:focus {
+         border: 2px solid red;
+
+      }
+      input[type='text'] {
+         color: brown;
+      }
+
+      input[type='radio']+label{
+         color: blue;
+      }
+      
+    </style>
+</head>
+<body>
+   
+   <h1>contact me</h1>
+   <img src="images/photo.jpg"height="100px"width="100px" alt="photo">
+   <br>
+   <br>
+   <form action="mailto:karkisapana220@outlook.com"method="post" enctype="plain">
+    <label for=" Firstname">your  Firstname:</label>
+    <input type="text" name="fname"id="" placeholder="fname">
+    <br>
+    <br>
+    <label for="Lastname">your Lastname:</label>
+    <input type="text" name="lname"id="" placeholder="lname">
+    <br>
+    <br>
+    <label for="Address">your Address:</label>
+    <input type="text" name="address"id="" placeholder="address">
+    <br>
+    <br>
+
+    <label for="mail">your mail:</label>
+    <input type="email" name="mail"id="" placeholder="email">
+    <br><br>
+    <label for="gender">gender</label>
+    <label for="male">male</label>
+    <input type="radio"name="gender"id="male">
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female">
+    <br><br>
+    <textarea name="message" id="" cols="30" rows="10" placeholder="type message"></textarea>
+    <br>
+     <br>
+     <label for="">select your country </label>
+     <select name="country" id="">
+        <option value="nepal">Nepal</option>
+        <option value="india">india</option>
+
+        <option value="china">china</option>
+
+        <option value="japan">japan</option>
+
+     </select>
+     <br>
+     <br>
+
+    <input type="submit" value="submit">
+   </form> 
+</body>
+</html>
